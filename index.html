@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Backlog App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .app-category, .api-category {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e0e0e0;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Backlog App</h1>
+    <h2>App Naming Ideas & API Concepts</h2>
+
+    <div class="app-category">
+        <h3>Backlog App</h3>
+        <ul>
+            <li>TaskTrek</li>
+            <li>BacklogBuddy</li>
+            <li>QueueUp</li>
+            <li>StackTrack</li>
+            <li>FlowLog</li>
+        </ul>
+    </div>
+
+    <div class="app-category">
+        <h3>Notes App</h3>
+        <ul>
+            <li>NoteNest</li>
+            <li>QuillPad</li>
+            <li>Scriblio</li>
+            <li>JotIt</li>
+            <li>MindVault</li>
+        </ul>
+    </div>
+
+    <div class="app-category">
+        <h3>Music Scrobbler</h3>
+        <ul>
+            <li>TuneTrack</li>
+            <li>Scrobby</li>
+            <li>MelodyLog</li>
+            <li>ListenLedger</li>
+            <li>BeatSync</li>
+        </ul>
+    </div>
+
+    <div class="app-category">
+        <h3>"Want to Watch" Movie List App</h3>
+        <ul>
+            <li>WatchHive</li>
+            <li>StreamQuest</li>
+            <li>Watchly</li>
+            <li>ReelList</li>
+            <li>CineTrack</li>
+        </ul>
+    </div>
+
+    <h2>API Concepts</h2>
+
+    <div class="api-category">
+        <h3>TimelineAPI (For ChronoQuest)</h3>
+        <ul>
+            <li>/events?year=1905 - Get events from a specific year</li>
+            <li>/events?location=Europe - Get events by region</li>
+            <li>/events?range=1800-1900 - Get events within a timeframe</li>
+        </ul>
+    </div>
+
+    <div class="api-category">
+        <h3>TaskFlow API (For Backlog App)</h3>
+        <ul>
+            <li>/tasks - Get all tasks</li>
+            <li>/tasks/{id} - Get details of a specific task</li>
+            <li>/tasks/create - Add a new task</li>
+        </ul>
+    </div>
+
+    <div class="api-category">
+        <h3>NoteSync API (For Notes App)</h3>
+        <ul>
+            <li>/notes - Retrieve all notes</li>
+            <li>/notes?tag=work - Get notes by category</li>
+            <li>/notes/create - Add a new note</li>
+        </ul>
+    </div>
+
+    <div class="api-category">
+        <h3>ScrobbleSync API (For Music Scrobbler)</h3>
+        <ul>
+            <li>/track/now-playing - Fetch current song</li>
+            <li>/track/history?user=123 - Get playback history</li>
+            <li>/track/stats?user=123 - Generate listening habits</li>
+        </ul>
+    </div>
+
+    <div class="api-category">
+        <h3>WatchFinder API (For Movie List App)</h3>
+        <ul>
+            <li>/movies?title=Inception - Search for a movie</li>
+            <li>/movies/{id}/streaming - Find where to watch</li>
+            <li>/movies/trending - Get trending movies</li>
+        </ul>
+    </div>
+</body>
+</html>
