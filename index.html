@@ -81,6 +81,28 @@
         </ul>
     </div>
 
+    <div class="app-category">
+        <h3>Conflict Period Insight (RU–UA)</h3>
+        <ul>
+            <li>Interactive time-bar to select start/end dates of the conflict</li>
+            <li>Outputs territorial change totals (gains/losses) for both sides</li>
+            <li>Shows prewar / estimated population exposure for the chosen period</li>
+            <li>Optional map overlay for visual change</li>
+            <li>Target: web + mobile (responsive)</li>
+        </ul>
+    </div>
+
+    <div class="app-category">
+        <h3>YouTube Transcript Fetcher</h3>
+        <ul>
+            <li>Paste a YouTube URL → get auto/retrieved transcript</li>
+            <li>Option to output raw JSON, plain text, or SRT-style</li>
+            <li>Supports language detection / fallback</li>
+            <li>Can be used as a backend microservice</li>
+            <li>Potential: summarization later</li>
+        </ul>
+    </div>
+
     <h2>API Concepts</h2>
 
     <div class="api-category">
@@ -127,5 +149,26 @@
             <li>/movies/trending - Get trending movies</li>
         </ul>
     </div>
+
+    <div class="api-category">
+        <h3>ConflictData API (RU–UA)</h3>
+        <ul>
+            <li>/conflict/period?from=2022-02-24&to=2022-04-30 – Territorial deltas in period</li>
+            <li>/conflict/actors – List of actors/controlled areas</li>
+            <li>/conflict/population?date=2022-02-23 – Prewar population baseline</li>
+            <li>/conflict/map?from=...&to=... – GeoJSON for map overlay</li>
+        </ul>
+    </div>
+
+    <div class="api-category">
+        <h3>YouTube Transcript API</h3>
+        <ul>
+            <li>/transcript?url={youtubeUrl} – Get transcript for a video</li>
+            <li>/transcript/{videoId}?lang=en – Force transcript language</li>
+            <li>/transcript/{videoId}/raw – Raw provider response</li>
+            <li>/transcript/{videoId}/segments – Time-coded segments</li>
+        </ul>
+    </div>
+
 </body>
 </html>
